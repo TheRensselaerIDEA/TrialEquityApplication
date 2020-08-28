@@ -48,7 +48,7 @@ The tool can
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig0.jpg">
+  <img width="50%" height="auto" src="/images/fig0.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -59,7 +59,7 @@ The tool can
 We apply the proposed RCT equity metrics to one real clinical trial Action to ControlCardiovascular Risk in Diabetes (**ACCORD**) and one self-generated RCT for demonstration. **ACCORD** data are obtained from [BiologicSpecimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
 <p align="center">
-  <img width="50%" height="auto" src="fig1.jpg">
+  <img width="50%" height="auto" src="/images/fig1.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -67,16 +67,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig2.jpg">
-</p>
-<p align="center">
-<em></em>
-</p>
-
-
-
-<p align="center">
-  <img width="50%" height="auto" src="fig3.jpg">
+  <img width="50%" height="auto" src="/images/fig2.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -85,7 +76,16 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig4.jpg">
+  <img width="50%" height="auto" src="/images/fig3.jpg">
+</p>
+<p align="center">
+<em></em>
+</p>
+
+
+
+<p align="center">
+  <img width="50%" height="auto" src="/images/fig4.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -93,7 +93,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig5.jpg">
+  <img width="50%" height="auto" src="/images/fig5.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -101,7 +101,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig6.jpg">
+  <img width="50%" height="auto" src="/images/fig6.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -109,7 +109,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig7.jpg">
+  <img width="50%" height="auto" src="/images/fig7.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -117,7 +117,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="fig8.jpg">
+  <img width="50%" height="auto" src="/images/fig8.jpg">
 </p>
 <p align="center">
 <em></em>
