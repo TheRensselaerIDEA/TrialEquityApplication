@@ -62,7 +62,7 @@ The following figure is a snapshot of the user interface on the About page. The 
 
 The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in the RCT ACCORD and the target population. The figures clearly identifies that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT, while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. female Hispanic participants age 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial. As shown in the top figure, the plot is interactive and the detialed group information will show when the mouse hovers on the bin. More interactive functions are shown on the up right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
 <p align="center">
-  <img width="50%" height="auto%" src="/images/fig1.jpg">
+  <img width="80%" height="auto%" src="/images/fig1.jpg">
 </p>
 <p align="center">
 <em>Interactive distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and ACCORD.</em>
