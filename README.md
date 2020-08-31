@@ -51,7 +51,7 @@ The tool can
 We apply the proposed RCT equity metrics to one real clinical trial Action to ControlCardiovascular Risk in Diabetes (**ACCORD**) and one self-generated RCT for demonstration. **ACCORD** data are obtained from [BiologicSpecimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
 
-The following is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
+The following figure is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig0.jpg">
 </p>
@@ -59,11 +59,13 @@ The following is a snapshot of the user interface on the About page. The applica
 <em>About page to overview the functions of TrialEquity.</em>
 </p>
 
+
+The 2 figure below demonstrates the distributions of patients from different gender, age, race/ethnicity, and education level groups in the RCT ACCORD and the target population. The figure clearly identifies that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT, while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. female Hispanic participants age 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial. As shown in the top figure, the plot is interactive and the detialed group information will show when the mouse hovers on the bin. More interactive functions are shown on the up right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
 <p align="center">
   <img width="80%" height="auto" src="/images/fig1.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>Interactive distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and ACCORD.</em>
 </p>
 
 
@@ -71,20 +73,22 @@ The following is a snapshot of the user interface on the About page. The applica
   <img width="80%" height="auto" src="/images/fig2.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>Using zoom in function to examine distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and ACCORD.</em>
 </p>
 
+In our visualization, grey indicates that no people with selected protected attributes exist in NHANES; black means that the subgroup is missing in both NHANES and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; white shows that the subgroup is equitably represented in the clinical trial. 
 
+The next figure presents the equity levels of subgroups defined by gender, age, race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the pointer over the target subgroup areas on the sunburst, the equity label, ideal rate, and observed rate of the subgroups will show on the screen. Additionally, the corresponding math function of observed rates will also show on the side. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, addional equity metrics including Adjusted Equal Opportunity and Quality Metirc can be applied for evaluation.
 
 <p align="center">
   <img width="50%" height="auto" src="/images/fig3.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>The Log Disparate Impact equity levels of subgroups defined over gender, age, race/ethnicity, and education level and the corresponding function of observed rate for subgroup Non-Hispanic White in ACCORD, with significance level = 0.05,lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
 </p>
 
 
-The figure below compares two RCTs from type-2 diabetes on univariate analysis.  A meaningful comparison usually happens for the same disease.
+The figure below compares two RCTs from type-2 diabetes on univariate analysis.  We can first compare the equity levels by colors and then go to detials by examining the numerical values of equity. For the 2 RCTs shown here, the first example RCT is more equitable then the ACCORD since more subgroups are fallen into the equitable level and have lower values. A meaningful comparison usually happens for the same disease.
 <p align="center">
   <img width="80%" height="auto" src="/images/fig4.jpg">
 </p>
@@ -92,36 +96,36 @@ The figure below compares two RCTs from type-2 diabetes on univariate analysis. 
 <em>Study comparison on univariate analysis between two type-2 diabetes RCTs.</em>
 </p>
 
-
+The meta-analysis can be performed by merging the selected files together by their variable names into one file. After combining them, we can treat this larger dataset as a single RCT to perform the equity analysis from other sections. This feature is helpful when the user have multiple small datasets or the diversity of each file can be impoved by combination. 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig5.jpg">
 </p>
 <p align="center">
-<em>Meta-analysis by merging multiple RCTs into one</em>
+<em>Meta-analysis by merging multiple RCTs into one.</em>
 </p>
 
-
+Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure on the right side of the plan will show the equity level of the new plan. The following figure clearly shows that the new recruitment plan is equitable for all subgroups. 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig6.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>New recruitment plan for a RCT of 1000 participants with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em>
 </p>
 
-
+Instead of providing an equitable recruitment plan for new studies, our application helps improve the equity of executed/ongoing RCTs through addiontal recruitment.  The result is displayed as a table on the left. The middle sunburst figure demonstrates the inequity situation of subgroups in the old RCT. The right sunburst figure shows the new inequity situation after the addional recruitment. For the figure below, many originally inequitably represented subgroups are shown to be equitable with 1000 more participants. 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig7.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>Remedial additional recruitment plan fo 1000 participants for the ACCORD with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em> 
 </p>
 
-
+Finally, the application assesses the equity condition of an individual patient. The following snapshot shows that a patient who is male, Hispanic, aged over 64, with some colledge/technical school degree, has systolic blood pressure between 130-139, and normal weight is highly underrepresented in the RCT with a equity score under -5. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also his BMI and age. Other attributes either make him equitably represented or overrepresneted.
 <p align="center">
   <img width="80%" height="auto" src="/images/fig8.jpg">
 </p>
 <p align="center">
-<em></em>
+<em>Indiviudal patient equity evaluation for a male Hispanic subject who is over 64, with some colledge/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
 </p>
 
 
