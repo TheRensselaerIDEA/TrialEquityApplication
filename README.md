@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) 
 
-[**TrialEquity**]( https://miao-qi-rpi-app.shinyapps.io/TrialEquity/)is an interactive web-based R-Shiny app founded upon our novel randomized clinical trial (RCT) inequity metrics derived from machine learning fairness measures. It is designed to quantify and visualize the inequities in clinical trials and provide insights to improve the clinical trial equity and health equity, with specific considerations for diverse user groups including clinicians, researchers, and health policy advocates. 
+[**TrialEquity**]( https://miao-qi-rpi-app.shinyapps.io/TrialEquity/) is an interactive web-based R-Shiny app founded upon our novel randomized clinical trial (RCT) inequity metrics derived from machine learning fairness measures. It is designed to quantify and visualize the inequities in clinical trials and provide insights to improve the clinical trial equity and health equity, with specific considerations for diverse user groups including clinicians, researchers, and health policy advocates. 
 
 
 <!-- TABLE OF CONTENTS -->
@@ -47,19 +47,20 @@ The tool can
 7. Evaluate individual patient equity
 
 
-<p align="center">
-  <img width="50%" height="auto" src="/images/fig0.jpg">
-</p>
-<p align="center">
-<em></em>
-</p>
-
-
 ## Example Demonstration
 We apply the proposed RCT equity metrics to one real clinical trial Action to ControlCardiovascular Risk in Diabetes (**ACCORD**) and one self-generated RCT for demonstration. **ACCORD** data are obtained from [BiologicSpecimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
+
+The following is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig1.jpg">
+  <img width="80%" height="auto" src="/images/fig0.jpg">
+</p>
+<p align="center">
+<em>About page to overview the functions of TrialEquity.</em>
+</p>
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig1.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -67,7 +68,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig2.jpg">
+  <img width="80%" height="auto" src="/images/fig2.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -83,9 +84,25 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 </p>
 
 
+The figure below compares two RCTs from type-2 diabetes on univariate analysis.  A meaningful comparison usually happens for the same disease.
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig4.jpg">
+</p>
+<p align="center">
+<em>Study comparison on univariate analysis between two type-2 diabetes RCTs.</em>
+</p>
+
 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig4.jpg">
+  <img width="80%" height="auto" src="/images/fig5.jpg">
+</p>
+<p align="center">
+<em>Meta-analysis by merging multiple RCTs into one</em>
+</p>
+
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig6.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -93,7 +110,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig5.jpg">
+  <img width="80%" height="auto" src="/images/fig7.jpg">
 </p>
 <p align="center">
 <em></em>
@@ -101,23 +118,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig6.jpg">
-</p>
-<p align="center">
-<em></em>
-</p>
-
-
-<p align="center">
-  <img width="50%" height="auto" src="/images/fig7.jpg">
-</p>
-<p align="center">
-<em></em>
-</p>
-
-
-<p align="center">
-  <img width="50%" height="auto" src="/images/fig8.jpg">
+  <img width="80%" height="auto" src="/images/fig8.jpg">
 </p>
 <p align="center">
 <em></em>
