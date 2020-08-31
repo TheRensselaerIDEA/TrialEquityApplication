@@ -62,7 +62,7 @@ The following figure is a snapshot of the user interface on the About page. The 
 
 The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in the RCT ACCORD and the target population. The figures clearly identifies that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT, while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. female Hispanic participants age 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial. As shown in the top figure, the plot is interactive and the detialed group information will show when the mouse hovers on the bin. More interactive functions are shown on the up right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
 <p align="center">
-  <img width="80%" height="auto%" src="/images/fig1.jpg">
+  <img width="50%" height="auto%" src="/images/fig1.jpg">
 </p>
 <p align="center">
 <em>Interactive distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and ACCORD.</em>
@@ -81,7 +81,7 @@ In our visualization, grey indicates that no people with selected protected attr
 The next figure presents the equity levels of subgroups defined by gender, age, race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the pointer over the target subgroup areas on the sunburst, the equity label, ideal rate, and observed rate of the subgroups will show on the screen. Additionally, the corresponding math function of observed rates will also show on the side. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, addional equity metrics including Adjusted Equal Opportunity and Quality Metirc can be applied for evaluation.
 
 <p align="center">
-  <img width="50%" height="auto" src="/images/fig3.jpg">
+  <img width="80%" height="auto" src="/images/fig3.jpg">
 </p>
 <p align="center">
 <em>The Log Disparate Impact equity levels of subgroups defined over gender, age, race/ethnicity, and education level and the corresponding function of observed rate for subgroup Non-Hispanic White in ACCORD, with significance level = 0.05,lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
