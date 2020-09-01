@@ -10,7 +10,7 @@
 
 1. [Project Description](#project-description)
 1. [Application Features](#application-features)
-1. [Example_Demonstration](#example-demonstration)
+1. [Example Demonstration](#example-demonstration)
 1. [Contact](#contact)
 1. [License](#license)
 1. [Acknowledgments](#acknowledgments)
