@@ -80,7 +80,7 @@ The two figures below demonstrate the distributions of patients from different g
 In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; white shows that the subgroup is equitably represented in the clinical trial. 
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/color_description.jpg">
+  <img width="60%" height="auto" src="/images/color_description.jpg">
 </p>
 <p align="center">
 <em>Color representation of inequity levels</em>
