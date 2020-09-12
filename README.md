@@ -76,7 +76,15 @@ The two figures below demonstrate the distributions of patients from different g
 <em>Using zoom in function to examine distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
 </p>
 
+
 In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; white shows that the subgroup is equitably represented in the clinical trial. 
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/color_description.jpg">
+</p>
+<p align="center">
+<em>Color representation of inequity levels</em>
+</p>
 
 The next figure presents the equity levels of subgroups defined by gender, age, race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the pointer over the target subgroup areas on the sunburst, the equity label, ideal rate, and observed rate of the subgroups will show on the screen. Additionally, the corresponding math function of observed rates will also show on the side. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Adjusted Equal Opportunity and Quality Metric can be applied for evaluation.
 
