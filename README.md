@@ -50,7 +50,7 @@ The tool can
 ## Example Demonstration
 We apply the proposed RCT equity metrics to one real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) and one self-generated RCT for demonstration. **ACCORD** data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
-Note: We decide to use "teal", instead of "white", to represent "equitable" in the application. The figures diplayed here will be updated later.
+**Note**: We decide to use "teal", instead of "white", to represent "equitable" in the application. The figures diplayed here will be updated later.
 
 The following figure is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
 <p align="center">
@@ -78,7 +78,7 @@ The two figures below demonstrate the distributions of patients from different g
 </p>
 
 
-In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; teal shows that the subgroup is equitably represented in the clinical trial. 
+In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; white shows that the subgroup is equitably represented in the clinical trial. 
 
 <p align="center">
   <img width="60%" height="auto" src="/images/color_description.jpg">
