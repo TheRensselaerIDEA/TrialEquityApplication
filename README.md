@@ -48,7 +48,7 @@ The tool can
 
 
 ## Example Demonstration
-We apply the proposed RCT equity metrics to one real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) for demonstration here. **ACCORD** data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
+We apply the proposed RCT equity metrics to a real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) for single-RCT analysis and Antihypertensive and Lipid-Lowering Treatment to Prevent Heart AttackTrial (**ALLHAT**), and Systolic Blood Pressure Intervention Trial (**SPRINT**) for multiple-RCT comparison. All sample data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
 TrialEquity is designed for two types of users, researchers and physicians, to perform different tasks based on different interests of the users.
 <p align="center">
@@ -102,38 +102,46 @@ In our visualization, grey indicates that no people with selected protected attr
 <em>Color representation of inequity levels</em>
 </p>
 
-The next figure presents the equity levels of subgroups defined by gender, age, race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the pointer over the target subgroup areas on the sunburst, the equity label, ideal rate, and observed rate of the subgroups will show on the screen. Additionally, the corresponding math function of observed rates will also show on the side. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Adjusted Equal Opportunity and Quality Metric can be applied for evaluation.
+The next figure presents the equity levels of subgroups defined by gender, age, and race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the mouse on a subgroup area of interest on the sunburst, the equity label, ideal rate, observed rate, and real number of participants of the subgroup will show on the screen. Additionally, by clicking in subgroup area on the sunburst, the corresponding math function of observed rates will show on the right side of the screen. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Adjusted Equal Opportunity and Quality Metric can be applied for evaluation.
 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig3.png">
 </p>
 <p align="center">
-<em>The Log Disparate Impact equity levels of subgroups defined over gender, age, race/ethnicity, and education level and the corresponding function of observed rate for subgroup Non-Hispanic White in RCT, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
+<em>The Log Disparate Impact equity levels of subgroups defined over gender, age, and race/ethnicity, and education level, with the corresponding function of observed rate for subgroup Non-Hispanic female susbjects aged over 64 and have some college education in ACCORD, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
 </p>
 
 
-The figure below compares two RCTs from type-2 diabetes on univariate analysis.  We can first compare the equity levels by colors and then go to details by examining the numerical values of equity. For the two RCTs shown here, the example RCT is more equitable than the ACCORD since more subgroups are fallen into the equitable level and have lower values. A meaningful comparison usually happens for studies of the same disease.
+The two figure below compare two RCTs, SPRINT and ALLHAT, of hypertension on univariate analysis. We can first compare the equity levels by colors and then go to details by examining the numerical values of equity. For the two RCTs shown here, the ALLHAT RCT is more equitable than the SPRINT regarding to attributes such as gender since more subgroups are fallen into the equitable level and have lower values. A meaningful comparison usually happens for studies of the same disease.
 <p align="center">
   <img width="80%" height="auto" src="/images/fig4.PNG">
 </p>
 <p align="center">
-<em>Study comparison on univariate analysis between two type-2 diabetes RCTs.</em>
+<em>Study comparison on univariate analysis between two hypertension RCTs on patient clinical characteristics.</em>
 </p>
 
-The meta-analysis can be performed by merging the selected files together based on their variables. After combining them, we can treat this larger dataset as a single RCT to perform the equity analysis. This feature is helpful when the user has multiple small datasets or the diversity of each file can be improved by combination. 
+
 <p align="center">
   <img width="80%" height="auto" src="/images/fig5.PNG">
 </p>
 <p align="center">
-<em>Meta-analysis by merging multiple RCTs into one.</em>
+<em>Study comparison on univariate analysis between two hypertension RCTs on patient demographic characteristics.</em>
 </p>
 
-Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure on the right side of the recruitment plan will show the equity level of this new plan. The following figure clearly shows that the new recruitment plan is equitable for all subgroups. 
+Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure will show the equity level of this new plan. The following figures clearly shows that the new recruitment plan is equitable for all subgroups. 
 <p align="center">
   <img width="80%" height="auto" src="/images/fig6.PNG">
 </p>
 <p align="center">
-<em>New recruitment plan for a RCT of 1000 participants with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em>
+<em>New recruitment plan for a type-2 diabetes RCT of 1000 participants with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em>
+</p>
+
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig6_2.PNG">
+</p>
+<p align="center">
+<em>Equity level on subgroups defined by age and race/ethnicity by following our suggested recruitment plan using Log Disparate Impact metric.</em>
 </p>
 
 Instead of providing an equitable recruitment plan for new studies, our application helps improve the equity of executed/ongoing RCTs through additional recruitment. The result is displayed as a table on the left. The middle sunburst figure demonstrates the inequity situation of subgroups in the old RCT. The right sunburst figure shows the new inequity situation after the additional recruitment. For the figure below, many originally inequitably represented subgroups are shown to be equitable with 1000 more participants. 
@@ -141,16 +149,33 @@ Instead of providing an equitable recruitment plan for new studies, our applicat
   <img width="80%" height="auto" src="/images/fig7.PNG">
 </p>
 <p align="center">
-<em>Remedial additional recruitment plan of 1000 participants for the ACCORD with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em> 
+<em>Remedial additional recruitment plan of 1000 participants for the ACCORD with protected attributes age and race/ethnicity using Log Disparate Impact metric.</em> 
 </p>
 
-Finally, the application assesses the equity condition of an individual patient. The following snapshot shows that a patient who is male, Hispanic, aged over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight is highly underrepresented in the RCT with a equity score lower than -5. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also his BMI and age. Other attributes either make him equitably represented or overrepresented.
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig7_2.PNG">
+</p>
+<p align="center">
+<em>Comparison of equity levels on subgroups before and after remedial recruitment for ACCORD on 1000 participants on protected attributes age and race/ethnicity using Log Disparate Impact metric.</em> 
+</p>
+
+Finally, the application assesses the equity condition of an individual patient. The following snapshots shows that a patient who is male, Hispanic, aged over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight is highly underrepresented in the RCT with a equity score lower than -5. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also his BMI and age. Other attributes either make him equitably represented or overrepresented.
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig8_2.PNG">
+</p>
+<p align="center">
+<em>Individual patient equity score for a male Hispanic subject who is over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
+</p>
+
 <p align="center">
   <img width="80%" height="auto" src="/images/fig8.PNG">
 </p>
 <p align="center">
 <em>Individual patient equity evaluation for a male Hispanic subject who is over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
 </p>
+
+
 
 
 
