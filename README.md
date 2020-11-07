@@ -54,7 +54,7 @@ We apply the proposed RCT equity metrics to one real clinical trial Action to Co
 
 The following figure is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig0.jpg">
+  <img width="80%" height="auto" src="/images/fig0.PNG">
 </p>
 <p align="center">
 <em>About page to overview the functions of TrialEquity.</em>
@@ -63,7 +63,7 @@ The following figure is a snapshot of the user interface on the About page. The 
 
 The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in an RCT and the target population. The figures clearly identify that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT (e.g. non-Hispanic black female participants aged 45-64 and have high school degree), while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. Hispanic female participants aged 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial (e.g. female participants aged 18-44). As shown in the top figure, the plot is interactive and the detailed group information will show up when the mouse hovers on the bin. More interactive functions are shown on the up-right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
 <p align="center">
-  <img width="80%" height="auto%" src="/images/fig1.jpg">
+  <img width="80%" height="auto%" src="/images/fig1.PNG">
 </p>
 <p align="center">
 <em>Interactive distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
@@ -71,17 +71,17 @@ The two figures below demonstrate the distributions of patients from different g
 
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig2.jpg">
+  <img width="80%" height="auto" src="/images/fig2.PNG">
 </p>
 <p align="center">
 <em>Using zoom in function to examine distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
 </p>
 
 
-In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; white shows that the subgroup is equitably represented in the clinical trial. 
+In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; teal shows that the subgroup is equitably represented in the clinical trial. 
 
 <p align="center">
-  <img width="60%" height="auto" src="/images/color_description.jpg">
+  <img width="60%" height="auto" src="/images/color_legend.JPG">
 </p>
 <p align="center">
 <em>Color representation of inequity levels</em>
@@ -90,7 +90,7 @@ In our visualization, grey indicates that no people with selected protected attr
 The next figure presents the equity levels of subgroups defined by gender, age, race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the pointer over the target subgroup areas on the sunburst, the equity label, ideal rate, and observed rate of the subgroups will show on the screen. Additionally, the corresponding math function of observed rates will also show on the side. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Adjusted Equal Opportunity and Quality Metric can be applied for evaluation.
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig3.jpg">
+  <img width="80%" height="auto" src="/images/fig3.png">
 </p>
 <p align="center">
 <em>The Log Disparate Impact equity levels of subgroups defined over gender, age, race/ethnicity, and education level and the corresponding function of observed rate for subgroup Non-Hispanic White in RCT, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
@@ -99,7 +99,7 @@ The next figure presents the equity levels of subgroups defined by gender, age, 
 
 The figure below compares two RCTs from type-2 diabetes on univariate analysis.  We can first compare the equity levels by colors and then go to details by examining the numerical values of equity. For the two RCTs shown here, the example RCT is more equitable than the ACCORD since more subgroups are fallen into the equitable level and have lower values. A meaningful comparison usually happens for studies of the same disease.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig4.jpg">
+  <img width="80%" height="auto" src="/images/fig4.PNG">
 </p>
 <p align="center">
 <em>Study comparison on univariate analysis between two type-2 diabetes RCTs.</em>
@@ -107,7 +107,7 @@ The figure below compares two RCTs from type-2 diabetes on univariate analysis. 
 
 The meta-analysis can be performed by merging the selected files together based on their variables. After combining them, we can treat this larger dataset as a single RCT to perform the equity analysis. This feature is helpful when the user has multiple small datasets or the diversity of each file can be improved by combination. 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig5.jpg">
+  <img width="80%" height="auto" src="/images/fig5.PNG">
 </p>
 <p align="center">
 <em>Meta-analysis by merging multiple RCTs into one.</em>
@@ -115,7 +115,7 @@ The meta-analysis can be performed by merging the selected files together based 
 
 Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure on the right side of the recruitment plan will show the equity level of this new plan. The following figure clearly shows that the new recruitment plan is equitable for all subgroups. 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig6.jpg">
+  <img width="80%" height="auto" src="/images/fig6.PNG">
 </p>
 <p align="center">
 <em>New recruitment plan for a RCT of 1000 participants with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em>
@@ -123,7 +123,7 @@ Our application can design an equitable recruitment plan for new studies with th
 
 Instead of providing an equitable recruitment plan for new studies, our application helps improve the equity of executed/ongoing RCTs through additional recruitment. The result is displayed as a table on the left. The middle sunburst figure demonstrates the inequity situation of subgroups in the old RCT. The right sunburst figure shows the new inequity situation after the additional recruitment. For the figure below, many originally inequitably represented subgroups are shown to be equitable with 1000 more participants. 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig7.jpg">
+  <img width="80%" height="auto" src="/images/fig7.PNG">
 </p>
 <p align="center">
 <em>Remedial additional recruitment plan of 1000 participants for the ACCORD with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em> 
@@ -131,7 +131,7 @@ Instead of providing an equitable recruitment plan for new studies, our applicat
 
 Finally, the application assesses the equity condition of an individual patient. The following snapshot shows that a patient who is male, Hispanic, aged over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight is highly underrepresented in the RCT with a equity score lower than -5. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also his BMI and age. Other attributes either make him equitably represented or overrepresented.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig8.jpg">
+  <img width="80%" height="auto" src="/images/fig8.PNG">
 </p>
 <p align="center">
 <em>Individual patient equity evaluation for a male Hispanic subject who is over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
