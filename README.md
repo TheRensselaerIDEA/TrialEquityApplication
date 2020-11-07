@@ -48,17 +48,32 @@ The tool can
 
 
 ## Example Demonstration
-We apply the proposed RCT equity metrics to one real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) and one self-generated RCT for demonstration. **ACCORD** data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
+We apply the proposed RCT equity metrics to one real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) for demonstration here. **ACCORD** data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
-**Note**: We decide to use "teal", instead of "white", to represent "equitable" in the application. The figures diplayed here will be updated later.
-
-The following figure is a snapshot of the user interface on the About page. The application allows for uploading multiple RCTs for different diseases and applying single RCT evaluation and multiple RCTs analysis at the same time. 
+TrialEquity is designed for two types of users, researchers and physicians, to perform different tasks based on different interests of the users.
 <p align="center">
   <img width="80%" height="auto" src="/images/fig0.PNG">
 </p>
 <p align="center">
 <em>About page to overview the functions of TrialEquity.</em>
 </p>
+
+The following two figures are snapshots of the target population information and RCT upload page. The application allows user to upload multiple target population datasets and RCT datasets for different diseases and to apply single RCT evaluation and multiple RCTs analysis at the same time. 
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig0_1.PNG">
+</p>
+<p align="center">
+<em>Upload page for target population information in TrialEquity.</em>
+</p>
+
+
+<p align="center">
+  <img width="80%" height="auto" src="/images/fig0_2.PNG">
+</p>
+<p align="center">
+<em>Upload page for RCT information in TrialEquity.</em>
+</p>
+
 
 
 The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in an RCT and the target population. The figures clearly identify that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT (e.g. non-Hispanic black female participants aged 45-64 and have high school degree), while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. Hispanic female participants aged 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial (e.g. female participants aged 18-44). As shown in the top figure, the plot is interactive and the detailed group information will show up when the mouse hovers on the bin. More interactive functions are shown on the up-right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
