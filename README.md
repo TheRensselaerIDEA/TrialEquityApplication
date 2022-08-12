@@ -1,9 +1,9 @@
-# TrialEquity Application
+# TrialEquity Prototype
 
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) 
 
 
-[**TrialEquity**]( https://miao-qi-rpi-app.shinyapps.io/TrialEquity/) is an interactive web-based R-Shiny app founded upon our novel randomized clinical trial (RCT) equity framework inspired by machine learning fairness. It is designed to quantify and visualize the inequities in clinical trials and provide insights to improve the clinical trial equity and health equity, with specific considerations for diverse user groups including clinicians, researchers, and health policy advocates. 
+[**TrialEquity**]( https://miao-qi-rpi-app.shinyapps.io/TrialEquity/) is an interactive web-based R-Shiny prototype founded upon our novel randomized clinical trial (RCT) equity framework inspired by machine learning fairness. It is designed to quantify, visualize, and reduce inequities in clinical trials and thus provide insights to improve clinical trial equity and health equity, with specific considerations for diverse user groups including clinicians, researchers, and health policy advocates. 
 
 
 <!-- TABLE OF CONTENTS -->
@@ -184,7 +184,7 @@ Finally, the application assesses the equity condition of an individual patient.
 <!-- CONTACT -->
 ## Contact
 
-Miao Qi  - qim@rpi.edu
+Miao Qi  - qim@rpi.edu / qimiaorpi@gmail.com
 
 Project Link: [ClinicalTrialEquity](https://github.com/TheRensselaerIDEA/TrialEquityApplication)
 
