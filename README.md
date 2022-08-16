@@ -9,7 +9,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Contents
 
-1. [Project Description](#project-description)
+1. [Project Overview](#project-overview)
 1. [Application Features](#application-features)
 1. [Example Demonstration](#example-demonstration)
 1. [Contact](#contact)
@@ -18,7 +18,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## Project Description
+## Project Overview
 We develop the TrialEquity based on our novel RCT equity framework derived from machine learning (ML) fairness research. The prototype helps clinical
 researchers, healthcare providers, and policy makers to address the needs and improve the care of underserved populations. TrialEquity is designed for two types of users: researcher and physician, who are interested in different topics related to health equity. It provides three capabilities for each type of users.
 For researchers, "Equity Evaluation" allows them to measure equity levels of RCT subgroups defined over selected patient characteristics; "Comparative Study of
@@ -86,7 +86,7 @@ The following three figures are snapshots of the target population information a
   <img width="80%" height="auto" src="/Figures/targetUpload2.png">
 </p>
 <p align="center">
-<em>Upload page for target population information in TrialEquity. Left: Default target population estimated from NHANES. Right: User-uploaded target population file.</em>
+<em>Upload page for target population information in TrialEquity. Top: Default target population estimated from NHANES. Bottom: User-uploaded target population file.</em>
 </p>
 
 
@@ -119,7 +119,7 @@ The two figures below demonstrate the distributions of patients from different g
 In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; teal shows that the subgroup is equitably represented in the clinical trial. 
 
 <p align="center">
-  <img width="60%" height="auto" src="/images/color_legend.JPG">
+  <img width="60%" height="auto" src="/images/colorLegend.png">
 </p>
 <p align="center">
 <em>Color representation of inequity levels</em>
