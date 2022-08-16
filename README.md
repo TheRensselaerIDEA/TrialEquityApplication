@@ -19,10 +19,22 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Project Description
-We develop the TrialEquity based on our novel RCT inequity metrics derived from Machine Learning (ML) Fairness Research. Visualizations and statistical tests based on proposed metrics enable researchers and physicians to rapidly visualize and assess potential inequities in RCTs for subgroups. The approach enables users to determine overrepresentation, underrepresentation, and exclusion of subgroups indicating potential limitations of RCTs. The method could help support evaluation of existing RCTs, design of new equitable RCTs within a given population limit, monitoring of RCT recruitment, and applicability of RCT results to patients. Additionally, TrialEquity can help the users compare the equity of different RCTs and generate larger meta-study dataset by combining several similar RCTs. For inequitable studies, TrialEquity is able to provide a remedial suggestion through additional recruitment of participants with given additional recruiting size and interested patient attributes. Finally, individual patient equity evaluation is implemented to provide information about each attribute's effect on equity for a specific patient. 
+We develop the TrialEquity based on our novel RCT equity framework derived from machine learning (ML) fairness research. The prototype helps clinical
+researchers, healthcare providers, and policy makers to address the needs and improve the care of underserved populations. TrialEquity is designed for two types of users: researcher and physician, who are interested in different topics related to health equity. It provides three capabilities for each type of users.
+For researchers, "Equity Evaluation" allows them to measure equity levels of RCT subgroups defined over selected patient characteristics; "Comparative Study of
+Equity" allows users to compare equities of a set of subgroups of interest among different RCTs; "Enrollment Planning" helps provide an equitable recruitment plan for RCTs (Chapter 3). "Enrollment Planning" enables our approach to be applied to three different cases: "New Enrollment Planning" gives a new equitable enrollment plan for any single-site RCTs at design/planning stage; "Monitor Enrollment" makes a remedial re-planning recruitment plan for ongoing/executed single-site RCTs if inequities are identified; "Multi-site Enrollment Planning" designs an equitable enrollment plan with site selection for multi-site RCTs. For physicians, "Study vs Target Population" compares subjects’ distribution of RCT sample to that of target population; “Equity Evaluation” is the same as the function for researchers; "Patient-Specific Equity" calculates equity score of an individual patient regarding to different RCTs and identifies the effect of each selected characteristic on this patient-specific equity score.
+
+<p align="center">
+  <img width="80%" height="auto" src="/Figures/toolArch.png">
+</p>
+<p align="center">
+<em>Overview of TrialEquity functionalities.</em>
+</p>
+
+
 
 ### What's the problem?
-Within the field of RCT research, there has been ongoing concern that RCTs which lack a diversity of participants may not provide clear evidence of efficacy and safety for new interventions in underrepresented or missing subpopulations. To date, there has been no efficient means to quantify the inequity between those who get enrolled into RCTs and the broader population who could benefit from the new intervention.
+Within the field of clinical research, there has been ongoing concern that RCTs which lack a diversity of participants may not provide clear evidence of efficacy and safety for new interventions in underrepresented or missing subpopulations. The NIH and other federal agencies have promoted policies and efforts to improve clinical trial recruitment of underserved populations. However, no current technology solutions designed to solve problems related to heath equity exist to systematically evaluate equity of clinical trial participation.
 
 
 ### How can technology help?
@@ -32,7 +44,15 @@ Our novel insight is that assignment of a subject to an RCT can be regarded as a
 
 
 ### The solution
-We compare the observed rate in the RCT for the subgroup to the hypothetical ideal rate in an equitable RCT in which patients are assigned truly randomly to the clinical trial.  By considering assignment to the clinical trial as a random classification function, we develop standardized metrics based on variations of ML fairness metrics, such as "Log Disparate Impact." The resulting metrics are functions of disease-specific observed and ideal rates of assignment of protected subgroups to the RCT. The new equitable and remedial recruitment plans are calculated to minimize the violation of the metric thresholds and the inequity values.  
+We compare the observed rate in the RCT for the subgroup to the hypothetical ideal rate in an equitable RCT in which patients are assigned truly randomly to the clinical trial.  By considering assignment to the clinical trial as a random classification function, we develop standardized metrics based on variations of ML fairness metrics, such as "Log Disparity." The resulting metrics are functions of disease-specific observed and ideal rates of assignment of protected subgroups to the RCT. The new equitable and remedial recruitment plans are calculated to minimize the violation of the metric thresholds and the inequity values.
+
+We also proposed a multi-objective goal-programming (GP) model for equitable enrollment planning and monitoring based on our equity framework. Guided by the scientific aims of the study, our GP model explicitly models equitable representation as a goal in enrollment and allows researchers to set goal preferences/priorities that best fit the applied scenario and learn from intermediate analysis to obtain a more satisfying solution eventually. Enrollments goals for subgroups defined on the basis of sex/gender, race/ethnicity, age, or other desired characteristics are defined using surveillance datasets.
+Thus, the GP modeling process provides justification in terms of a representative sample required by NIH and IRB evaluation to perform valid analysis. It also incorporates lower bounds on subgroup sizes to ensure that the study has sufficient power to determine subgroup differences.
+
+Building on our equity framework, which can systematically evaluate how significantly different the characteristics of the cohort participating in clinical trials are from population-level, disease-specific estimates of those characteristics in national samples, we have implemented a web-based TrialEquity prototype to address the equity problem of clinical research for diverse user groups, and thus promote health equity. Since most medically underserved populations are heterogeneous in composition, our prototype allows for the multivariate analysis on different numbers of population characteristics, which provides more precise and profound insights on equity issue of poor and underserved populations in clinical research. For example, an intervention beneficial for White participants may produce different health outcomes if the gender or age of the same White subjects are taken into account.
+
+
+
 
 ## Application Features
 
@@ -51,25 +71,27 @@ The tool can
 ## Example Demonstration
 We apply the proposed RCT equity metrics to a real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) for single-RCT analysis and Antihypertensive and Lipid-Lowering Treatment to Prevent Heart AttackTrial (**ALLHAT**), and Systolic Blood Pressure Intervention Trial (**SPRINT**) for multiple-RCT comparison. All sample data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
-TrialEquity is designed for two types of users, researchers and physicians, to perform different tasks based on different interests of the users.
+TrialEquity is designed for two types of users, researchers and physicians, to perform different tasks based on different interests of the users. To start the
+analysis, users should indicate a user type based on their roles.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig0.PNG">
+  <img width="80%" height="auto" src="/Figures/userType.png">
 </p>
 <p align="center">
-<em>About page to overview the functions of TrialEquity.</em>
-</p>
-
-The following two figures are snapshots of the target population information and RCT upload page. The application allows user to upload multiple target population datasets and RCT datasets for different diseases and to apply single RCT evaluation and multiple RCTs analysis at the same time. 
-<p align="center">
-  <img width="80%" height="auto" src="/images/fig0_1.PNG">
-</p>
-<p align="center">
-<em>Upload page for target population information in TrialEquity.</em>
+<em>User type selection of TrialEquity.</em>
 </p>
 
+The following three figures are snapshots of the target population information and RCT upload page. The application allows user to upload multiple target population datasets and RCT datasets for different diseases and to apply single RCT evaluation and multiple RCTs analysis at the same time. 
+<p align="center">
+  <img width="80%" height="auto" src="/Figures/targetUpload.png">
+  <img width="80%" height="auto" src="/Figures/targetUpload2.png">
+</p>
+<p align="center">
+<em>Upload page for target population information in TrialEquity. Left: Default target population estimated from NHANES. Right: User-uploaded target population file.</em>
+</p>
+
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig0_2.PNG">
+  <img width="80%" height="auto" src="/Figures/rctUpload.png">
 </p>
 <p align="center">
 <em>Upload page for RCT information in TrialEquity.</em>
