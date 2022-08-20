@@ -69,7 +69,7 @@ The tool can
 
 
 ## Example Demonstration
-We apply the proposed RCT equity metrics to a real clinical trial Action to Control Cardiovascular Risk in Diabetes (**ACCORD**) for single-RCT analysis and Antihypertensive and Lipid-Lowering Treatment to Prevent Heart AttackTrial (**ALLHAT**), and Systolic Blood Pressure Intervention Trial (**SPRINT**) for multiple-RCT comparison. All sample data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
+We apply the proposed RCT equity metrics to a real RCT, "Action to Control Cardiovascular Risk in Diabetes (**ACCORD**)", for type 2 diabetes and two RCTs,  "Antihypertensive and Lipid-Lowering Treatment to Prevent Heart AttackTrial (**ALLHAT**)" and "Systolic Blood Pressure Intervention Trial (**SPRINT**)", for hypertension. All sample data are obtained from [Biologic Specimen and Data Repositories Information Coordinating Center (BioLINCC)](https://biolincc.nhlbi.nih.gov/home/).
 
 TrialEquity is designed for two types of users, researchers and physicians, to perform different tasks based on different interests of the users. To start the
 analysis, users should indicate a user type based on their roles.
@@ -89,7 +89,6 @@ The following three figures are snapshots of the target population information a
 <em>Upload page for target population information in TrialEquity. Top: Default target population estimated from NHANES. Bottom: User-uploaded target population file.</em>
 </p>
 
-
 <p align="center">
   <img width="80%" height="auto" src="/Figures/rctUpload.png">
 </p>
@@ -98,10 +97,9 @@ The following three figures are snapshots of the target population information a
 </p>
 
 
-
-The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in an RCT and the target population. The figures clearly identify that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT (e.g. non-Hispanic black female participants aged 45-64 and have high school degree), while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g. Hispanic female participants aged 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial (e.g. female participants aged 18-44). As shown in the top figure, the plot is interactive and the detailed group information will show up when the mouse hovers on the bin. More interactive functions are shown on the up-right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
+The two figures below demonstrate the distributions of patients from different gender, age, race/ethnicity, and education level groups in ACCORD and the target population (i.e., U.S. adults with type 2 diabetes). The figures clearly identify that young patients are missing from the clinical trial. Also, the higher red bin shows that the subgroup may be overrepresented in the RCT (e.g., non-Hispanic black female participants who are 45-64 years-old and have high school degree), while the higher green bin shows that the subgroup has the potential to be underrepresented in the RCT (e.g., Hispanic female participants aged 45-64 and do not graduate from high school). The wider green bin means that the subgroup is missing from the clinical trial (e.g., female participants aged 18-44). As shown in the top figure, the plot is interactive and the detailed group information will show up when the mouse hovers on the bin. More interactive functions are shown on the up-right corner on the bottom figure. For example, when the distributions are characterized by a large number of attributes, some bins are too small to be examined and the "zoom in" function can perfectly solve this problem.
 <p align="center">
-  <img width="80%" height="auto%" src="/images/fig1.PNG">
+  <img width="80%" height="auto%" src="/Figures/studyVStarget.png">
 </p>
 <p align="center">
 <em>Interactive distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
@@ -109,29 +107,38 @@ The two figures below demonstrate the distributions of patients from different g
 
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig2.PNG">
+  <img width="80%" height="auto" src="/Figures/studyVStarget3.png">
 </p>
 <p align="center">
 <em>Using zoom in function to examine distributions of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
 </p>
 
-
-In our visualization, grey indicates that no people with selected protected attributes exist in the target population; black means that the subgroup is missing in both target population and RCT; dark red represents the absent subgroup from the RCT; orange-red and yellow-brown point out that some subgroups are not sufficiently represented and may be at risk of being insufficiently recruited into and represented in the clinical trial cohort; on the other hand, dark blue and light blue identify the potential advantaged subgroups which may make inefficient treatment seem helpful or vice versa; teal shows that the subgroup is equitably represented in the clinical trial. 
+A summary on RCT and target populations are provided for users to overview, as shown in the figure below.
 
 <p align="center">
-  <img width="60%" height="auto" src="/images/colorLegend.png">
+  <img width="80%" height="auto" src="/Figures/studyVStarget2.png">
+</p>
+<p align="center">
+<em>Summary data of subgroups defined over gender, age, race/ethnicity, and education level in both target population and RCT.</em>
+</p>
+
+We created a visualization using different colors to represent different equity levels. As defined in the following figure, dark red represents the subgroups absent from the RCT; light orange and orange red indicate that subgroups are underrepresented or highly underrepresented in the study cohort relative to the target population; light and blue specify the potentially overrepresented or highly overrepresented subgroups; teal shows the subgroup is either equitably represented or has no significant difference; dark grey indicates that no individuals with selected protected attributes exist in estimated target population; light grey indicates absent subgroup in both estimated target population and study cohort.
+
+<p align="center">
+  <img width="60%" height="auto" src="/Figures/colorLegend.png">
 </p>
 <p align="center">
 <em>Color representation of inequity levels</em>
 </p>
 
-The next figure presents the equity levels of subgroups defined by gender, age, and race/ethnicity, and education level from the inner ring to the outer ring using the Log Disparate Impact metric. By hovering the mouse on a subgroup area of interest on the sunburst, the equity label, ideal rate, observed rate, and real number of participants of the subgroup will show on the screen. Additionally, by clicking in subgroup area on the sunburst, the corresponding math function of observed rates will show on the right side of the screen. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Adjusted Equal Opportunity and Quality Metric can be applied for evaluation.
+The next figure presents the equity levels of subgroups defined by race/ethnicity, gender, BMI, and fasting glucose level from the inner ring to the outer ring using the Log Disparity metric. By hovering the mouse on a subgroup area of interest on the sunburst, the equity label, ideal rate, observed rate, and real number of participants of the subgroup will show on the screen. Additionally, by clicking in subgroup area on the sunburst, the corresponding math function of observed rates will show on the right side of the screen. The green line indicates the ideal rate and the brown line indicates the current RCT observed rate on the figure. The order of attributes shown above the sunburst figure can be rearranged to generate different figures for other subgroups. Also, additional equity metrics including Normalized Parity can be applied for evaluation.
 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig3.png">
+  <img width="80%" height="auto" src="/Figures/equityEvaluation.png">
+  <img width="80%" height="auto" src="/Figures/equityEvaluation2.png">
 </p>
 <p align="center">
-<em>The Log Disparate Impact equity levels of subgroups defined over gender, age, and race/ethnicity, and education level, with the corresponding function of observed rate for subgroup Non-Hispanic female susbjects aged over 64 and have some college education in ACCORD, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
+<em>Equity score of subgroups defined over race/ethnicity, gender, BMI, and fasting glucose level, with the corresponding function of observed rate for subgroup Hispanic male susbjects who are overweight and have fasting glucose >=126 mg/dL in ACCORD, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
 </p>
 
 
