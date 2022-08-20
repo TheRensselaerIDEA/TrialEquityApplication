@@ -135,27 +135,19 @@ The next figure presents the equity levels of subgroups defined by race/ethnicit
 
 <p align="center">
   <img width="80%" height="auto" src="/Figures/equityEvaluation.png">
-  <img width="80%" height="auto" src="/Figures/equityEvaluation2.png">
+  <img width="80%" height="auto" src="/Figures/equityEvaluationReport.png">
 </p>
 <p align="center">
-<em>Equity score of subgroups defined over race/ethnicity, gender, BMI, and fasting glucose level, with the corresponding function of observed rate for subgroup Hispanic male susbjects who are overweight and have fasting glucose >=126 mg/dL in ACCORD, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4.</em>
+<em>Equity score of subgroups defined over race/ethnicity, gender, BMI, and fasting glucose level, with the corresponding function of observed rate for subgroup Hispanic male susbjects who are overweight and have fasting glucose >=126 mg/dL in ACCORD, with significance level = 0.05, lower equity threshold = 0.2, and upper equity threshold = 0.4. Top: Visualization results. Bottom: Automatically generated report for the selected subgroup.</em>
 </p>
 
 
 The two figure below compare two RCTs, SPRINT and ALLHAT, of hypertension on univariate analysis. We can first compare the equity levels by colors and then go to details by examining the numerical values of equity. For the two RCTs shown here, the ALLHAT RCT is more equitable than the SPRINT regarding to attributes such as gender since more subgroups are fallen into the equitable level and have lower values. A meaningful comparison usually happens for studies of the same disease.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig4.PNG">
+  <img width="80%" height="auto" src="/Figures/comparativeResults.png">
 </p>
 <p align="center">
-<em>Study comparison on univariate analysis between two hypertension RCTs on patient clinical characteristics.</em>
-</p>
-
-
-<p align="center">
-  <img width="80%" height="auto" src="/images/fig5.PNG">
-</p>
-<p align="center">
-<em>Study comparison on univariate analysis between two hypertension RCTs on patient demographic characteristics.</em>
+<em>Study comparison on univariate analysis between two hypertension RCTs on patient demongraphic and clinical characteristics.</em>
 </p>
 
 Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure will show the equity level of this new plan. The following figures clearly shows that the new recruitment plan is equitable for all subgroups. 
