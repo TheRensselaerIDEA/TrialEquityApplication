@@ -182,6 +182,7 @@ Finally, the application assesses the equity condition of an individual patient.
 
 <p align="center">
   <img width="80%" height="auto" src="/Figures/patientScore.png">
+  <img width="80%" height="auto" src="/Figures/patientFactor.png">
 </p>
 <p align="center">
 <em>Individual patient equity analysis for a female Hispanic subject who is obese. Top: Patient equity score. Bottom: Detailed analysis on potential contributing patient characteristics for inequity. </em>
