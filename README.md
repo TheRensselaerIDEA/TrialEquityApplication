@@ -152,52 +152,40 @@ The two figure below compare two RCTs, SPRINT and ALLHAT, of hypertension on uni
 
 Our application can design an equitable recruitment plan for new studies with the given expected number of participants and the attributes that are interested by the researchers. The result is displayed as a table for each subgroup. The sunburst figure will show the equity level of this new plan. The following figures clearly shows that the new recruitment plan is equitable for all subgroups. 
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig6.PNG">
+  <img width="80%" height="auto" src="/Figures/newPlanTable.png">
+  <img width="80%" height="auto" src="/Figures/newPlanSunburst.png">
 </p>
 <p align="center">
-<em>New recruitment plan for a type-2 diabetes RCT of 1000 participants with protected attributes gender, age, and race/ethnicity using Log Disparate Impact metric.</em>
+<em>New recruitment plan for the ACCORD of 2000 participants with protected attributes gender and race/ethnicity using Log Disparity metric. Top: Detailed new plan. Bottom: Equity analysis results visualization.</em>
 </p>
 
-
+Additionally, TrialEquity supports the monitoring and remediation of enrollment target deviations in clinical research to ensure diverse patient populations, including previously underrepresented subgroups, to be adequately represented in the RCTs. TrialEquity can indicate any subgroup access challenges to the
+study. Our real-time evaluation could enforce an optimal representativeness of patients.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig6_2.PNG">
+  <img width="80%" height="auto" src="/Figures/monitorPlanTable.png">
+  <img width="80%" height="auto" src="/Figures/monitorPlanSunburst.png">
 </p>
 <p align="center">
-<em>Equity level on subgroups defined by age and race/ethnicity by following our suggested recruitment plan using Log Disparate Impact metric.</em>
-</p>
-
-Instead of providing an equitable recruitment plan for new studies, our application helps improve the equity of executed/ongoing RCTs through additional recruitment. The result is displayed as a table on the left. The middle sunburst figure demonstrates the inequity situation of subgroups in the old RCT. The right sunburst figure shows the new inequity situation after the additional recruitment. For the figure below, many originally inequitably represented subgroups are shown to be equitable with 1000 more participants. 
-<p align="center">
-  <img width="80%" height="auto" src="/images/fig7.PNG">
-</p>
-<p align="center">
-<em>Remedial additional recruitment plan of 1000 participants for the ACCORD with protected attributes age and race/ethnicity using Log Disparate Impact metric.</em> 
+<em>Remediation enrollment plan of 2000 new participants for the ACCORD with protected attributes gender and race/ethnicity using Log Disparity metric. Top: Detailed remediation plan. Bottom: Comparison of equity levels before and after remediation.</em> 
 </p>
 
+If the trial requires recruitment from multiple clinical centers, TrialEquity will provide both the overall enrollment plan and the site-level plans.
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig7_2.PNG">
+  <img width="80%" height="auto" src="/Figures/multi_site_overall.png">
+  <img width="80%" height="auto" src="/Figures/multi_site_sitelevel.png">
 </p>
 <p align="center">
-<em>Comparison of equity levels on subgroups before and after remedial recruitment for ACCORD on 1000 participants on protected attributes age and race/ethnicity using Log Disparate Impact metric.</em> 
-</p>
-
-Finally, the application assesses the equity condition of an individual patient. The following snapshots shows that a patient who is male, Hispanic, aged over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight is highly underrepresented in the RCT with a equity score lower than -5. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also his BMI and age. Other attributes either make him equitably represented or overrepresented.
-
-<p align="center">
-  <img width="80%" height="auto" src="/images/fig8_2.PNG">
-</p>
-<p align="center">
-<em>Individual patient equity score for a male Hispanic subject who is over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
+<em>New recruitment plan for the SPRINT of 9361 participants with protected attributes gender and race/ethnicity using Log Disparity metric. Top: Overall plan. Bottom: Site-level plans.</em>
 </p>
 
+Finally, the application assesses the equity condition of an individual patient. The following snapshots shows that a patient who is female, Hispanic, and obese is highly underrepresented in the RCT with an equity score -1.0953. The diverging bar chart analyzes that the inequitable situation is mainly caused by the race/ethnicity factor "Hispanic", and also her gender.
+
 <p align="center">
-  <img width="80%" height="auto" src="/images/fig8.PNG">
+  <img width="80%" height="auto" src="/Figures/patientScore.png">
 </p>
 <p align="center">
-<em>Individual patient equity evaluation for a male Hispanic subject who is over 64, with some college/technical school degree, has systolic blood pressure between 130-139, and normal weight. </em>
+<em>Individual patient equity analysis for a female Hispanic subject who is obese. Top: Patient equity score. Bottom: Detailed analysis on potential contributing patient characteristics for inequity. </em>
 </p>
-
-
 
 
 
